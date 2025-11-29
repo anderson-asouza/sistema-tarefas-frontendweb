@@ -1,0 +1,87 @@
+.item 
+{
+  margin-right: 0em;
+  font-weight: none;
+  color: var(--texto-claro);
+  display: flex;
+  gap: 0.5rem; 
+  text-decoration: none;
+  align-items: center;
+  font-size: 1.0rem;
+}
+
+.item:hover {
+  color: var(--color-theme);
+}
+
+.item svg {
+  display: block;
+  font-size: 2.2rem;
+}
+
+.fotoIcone{
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.fotoIcone:hover {
+  border-color: var(--color-theme);
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  position: absolute; 
+  color: var(--texto-claro);
+  background: var(--bg-theme);
+  border: 1px solid #ccc;
+  z-index: 1000;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 8px 1px; 
+  overflow: hidden;
+  max-width: 20em;
+}
+
+span {
+  display: block;  
+}
+
+@media (max-width: 999px) {
+  span {
+    display: none;
+  }
+}
+
+.dropdown div:hover {
+  color: var(--color-theme);
+}
+
+.dropdown button {
+  all: unset;
+  display: block;
+  width: 100%;
+  padding: 0.9em 1.2em;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1rem;
+  color: inherit;  
+}
+
+.dropdown button:hover,
+.dropdown button:focus {
+  color: var(--color-theme);
+  outline: none;
+}
+
+.dropdown button:focus-visible {
+  outline: 2px solid #ccc;
+  outline-offset: 4px;  
+  color: var(--color-theme);
+  border-radius: 4px;
+}

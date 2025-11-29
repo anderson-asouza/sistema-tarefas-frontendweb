@@ -1,0 +1,135 @@
+.container {
+  width: 99%;
+  height: 99%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container h1 {
+  font-size: 1.3em;
+  text-align: center;
+  font-weight: 600;
+  width: 100%;  
+  padding: 0px;
+  margin: 0px;
+}
+
+h3 {
+  display: block;
+  font-weight: bold;
+  margin: 0em 0em 0.2em 0em;   
+}
+
+.espacado {
+  padding: 0em 1em;
+  gap: 1em;
+}
+
+.container p {
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: 700;
+}
+
+.sombra {
+  box-shadow: 0 6px 19px rgba(0, 0, 75, 0.2);
+}
+
+.listaItens {
+  color: #444;  
+  padding: 0px;
+  margin: 0.5em 0em 0em 0em;
+  width: 100%;
+  table-layout: fixed;
+  border-radius: 8px;  
+  box-shadow: 0 6px 19px rgba(0, 0, 75, 20.0);
+  max-height: 55vh;
+  border-spacing: 0px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.listaItens thead tr th {
+  text-align: left;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: var(--texto-escuro);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  white-space: nowrap;
+  padding: 5px;
+}
+
+.listaItens tbody tr td {
+  font-size: 1em;
+  padding: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: center;
+}
+
+.listaItens tfoot tr td {
+  white-space: nowrap;
+  font-weight: bold;
+  padding-left: 0.5em;
+  word-spacing: 0.7em;
+}
+
+.listaItens tfoot tr td input {
+  width: 4em;
+}
+
+.linhaSelecionada {
+  background-color: #e0f0ff;  
+}
+
+.itemCondensado {
+  flex: 1;
+  text-align: left;
+  transition: all 0.3s ease;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;  
+}
+
+.itemCondensado.expandeItem {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  overflow-wrap: anywhere;
+}
+
+.celulaCentralizada {
+  text-align: center;
+}
+ 
+.svgBtn {
+  font-size: 1.5em;
+  margin: 0em 1em 0em 0em;
+  padding: 0em;
+  word-spacing: 1.5em;
+  color: #275891;
+}
+
+.svgBtn :hover {
+  cursor: pointer;
+  color: var(--color-theme);
+}
+
+.svgDesabilitados {
+  font-size: 1.5em;
+  margin: 0em 1em 0em 0em;
+  padding: 0em;
+  word-spacing: 1.5em;  
+  cursor: not-allowed;
+  color: darkgray;
+}
+
+.pdf {
+  color: #e60d0d;
+  background-color: #e0f0ff; 
+}

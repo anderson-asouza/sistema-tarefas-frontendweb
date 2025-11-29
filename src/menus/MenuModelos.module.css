@@ -1,0 +1,10 @@
+.ajustaPosicao {
+  width: 18em;
+}
+
+@media (max-width: 1000px) and (max-height: 1000px) {
+  .ajustaPosicao {
+    width: 17em;
+    transform: translateX(calc(-14.7em));
+  }
+}

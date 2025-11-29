@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.fundo {
+    background-color: var(--bg-theme);
+    width: 100%;
+    align-items: center;
+}
+
+.start {
+    justify-content: flex-start;
+}
+
+.column {
+    flex-direction: column;
+    justify-content: flex-start;
+}

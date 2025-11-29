@@ -1,0 +1,27 @@
+.container {
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0em;
+}
+
+.container h1 {
+    font-size: 2.2em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.container h1 span {
+    color: var(--color-theme);
+    padding: 0 .2em;
+    background-color: var(--bg-theme);
+    font-weight: bold;
+    display: block;
+}
+
+.container p {
+    margin: 1.5em 0em;
+    color: #7b7b7b;
+}

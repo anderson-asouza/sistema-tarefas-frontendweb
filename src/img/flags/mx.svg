@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="mx">
+<defs>
+    <clipPath id="clipRounded">
+      <rect x="0" y="0" width="512" height="512" rx="32" ry="32" />
+    </clipPath>
+</defs>
+  <g clip-path="url(#clipRounded)">
+    <rect x="0.0" y="0" width="170.66666666666666" height="512" fill="#006847"/>
+    <rect x="170.66666666666666" y="0" width="170.66666666666666" height="512" fill="#FFFFFF"/>
+    <rect x="341.3333333333333" y="0" width="170.66666666666666" height="512" fill="#CE1126"/>
+  </g>
+</svg>

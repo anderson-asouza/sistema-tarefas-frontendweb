@@ -1,0 +1,52 @@
+.selector {
+  position: relative;
+  display: inline-block;
+}
+
+.flagButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.flagButton img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.dropdown {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background: var(--bg-theme);
+  border: 1px solid #ccc;
+  z-index: 1000;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 0px 4px;
+  transform: translate(0px, -174px);/*Só use no rodapé (add -40 pra cada idioma)*/
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.6rem;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  gap: 0.5rem;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+.option img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}

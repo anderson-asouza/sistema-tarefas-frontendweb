@@ -1,0 +1,74 @@
+.listaCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.listaCards strong {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.card {
+  border: 1px solid var(--color-theme);
+  color: var(--texto-escuro);
+  border-radius: 8px;
+  width: 360px;
+  box-shadow: 0 15px 30px rgba(0, 0, 75, 2);
+  margin: 0em;
+  padding: 0em;  
+}
+
+.titulo {
+  border: 1px ridge var(--color-theme);
+  background-color: var(--bg-theme);
+  color: var(--color-theme);
+  font-weight: 600;
+  border-radius: 8px;
+  text-align: center;
+  padding: 1em 1em 0.1em 1em;
+  width: 100%;
+  margin: 0.0em;    
+  box-shadow: 1px 10px 20px rgba(0, 0, 75, 2);
+}
+
+.titulo p {
+  color: var(--texto-claro);
+  font-weight: normal !important;
+}
+
+.categoria {
+  margin-top: 1em;;
+  align-items: center;
+  gap: 1em;
+  display: flex;
+  flex-direction: row; 
+  margin: 1em;
+}
+
+.categoria svg {
+  color: var(--texto-escuro);
+  font-size: 1.3em;
+}
+
+.listaCards ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin: 1rem 0px;
+  flex-direction: row;
+  gap: 2em;
+  align-items: center;
+}
+
+.listaCards ul li {
+  
+  font-size: 1.5em;
+}
+
+.listaCards ul li:hover {
+    cursor: pointer;
+    color: var(--color-theme);
+}

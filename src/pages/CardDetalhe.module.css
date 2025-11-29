@@ -1,0 +1,86 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding: 0.2em;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.container h1 {
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: 600;
+  width: 100%;  
+  padding: 0px;
+  margin: 0px;
+  font-weight: bold;
+}
+
+label { 
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;  
+}
+
+p {
+  margin: 1em 0em;
+}
+
+.campo {
+  font-size: 1em;
+  margin-bottom: 0.1em;
+  padding: 0.6em;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 6px 6px 12px #b8b8b8, -6px -6px 12px #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.campoSimples {
+  font-size: 1em;
+  padding: 0.6em 0em;
+}
+
+@media (max-width: 600px), (max-height: 600px) {
+  label {    
+    font-size: 0.95em; 
+  }
+
+  .campo { 
+    font-size: 0.95em;
+  }
+
+  .campoSimples { 
+    font-size: 0.95em;
+  }  
+}
+
+.campoTitulo { 
+  font-size: 1.1em;
+  padding: 0.1em 0.2em 0em 0.2em;
+  font-weight: bold;
+}
+
+.itemCondensado {
+  flex: 0 1 auto;
+  max-width: 100%;  
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;  
+  cursor: pointer;
+}
+
+.itemExpandido {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  overflow-wrap: anywhere;  
+  background: #e0f0ff;
+  transition: background-color 0.4s ease;  
+}
